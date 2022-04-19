@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --main-color: #000000;
+    --black: #1CA69E;
+    --bg: #ffffff;
+    --border:.1rem solid rgba(255,255,255,.3);
+    --white: rgb(0, 0, 0);
+    --gray: #ccc;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+}
+  
+html {
+    font-size: 62.5%; /* 10px */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+  
+html::-webkit-scrollbar {
+     width: 0.8rem; 
+}
+
+.title {
+    position:fixed; left: 40px;
+    color: #1CA69E;
+}
+
+.logo{
+    float:left;
+}
+
+header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+table.paleBlueRows {
+    font-family: "Times New Roman", Times, serif;
+    border: 1px solid #555555;
+    width: 320px;
+    height: 150px;
+    position:fixed; left: 320px; top: 210px;
+    text-align: center;
+    border-collapse: collapse;
+}
+table.paleBlueRows td, table.paleBlueRows th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 2px;
+}
+table.paleBlueRows tbody td {
+    font-size: 13px;
+}
+table.paleBlueRows tr:nth-child(even) {
+    background: #17A49D;
+}
+table.paleBlueRows thead {
+    background: #17A49D;
+    border-bottom: 5px solid #FFFFFF;
+}
+table.paleBlueRows thead th {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #FFFFFF;
+}
+table.paleBlueRows thead th:first-child {
+    border-left: none;
+}
+  
+table.paleBlueRows tfoot td {
+    font-size: 14px;
+}
+
+.login {
+    font-size: 15px;
+    position: relative;
+}
+
+
+footer {
+    background: var(--black);
+    text-align: center;
+    position:absolute; bottom: -100%;
+    box-sizing:content-box; width:100%; height: max-content;
+}
+  
+footer .share {
+    
+    padding: 3px;
+}
+  
+footer .share a {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    border: var(--border);
+    margin: 0.1rem;
+    border-radius: 50%;
+}
+  
+footer .share a:hover {
+    background-color: var(--main-color);
+}
+
+footer .reserve {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1.5rem;
+}
+  
+footer .reserve span {
+    color: var(--main-color);
+}
+
+.about .row .image .user {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
