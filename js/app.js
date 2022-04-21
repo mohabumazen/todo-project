@@ -34,3 +34,16 @@ if (skipWelcome == true) {
     alert(`Welcome to my ToDo list project ${genderWelcome}${userName}`)
 }
 
+let userExp = prompt("Answering more questions will help us develop our website, Do you want to answer more?").toLowerCase()
+
+setInput(userExp, userInputs)
+
+let userHelp = prompt("Is the site helpful?").toLowerCase()
+
+setInput(userHelp, userInputs)
+
+let userFeed = prompt("Did the site help you with your daily tasks?").toLowerCase()
+
+setInput(userFeed, userInputs)
+
+userInputs.forEach((ele,index) => console.log(`Element ${index} is ${ele}`))
